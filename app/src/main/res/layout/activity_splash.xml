@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+
+        app:rcRadius="10dp"
+        app:rcBackgroundPadding="5dp"
+        app:rcReverse="false"
+        android:layout_centerHorizontal="true"
+        app:rcProgressColor="@color/colorAccent"
+        app:rcSecondaryProgressColor="#fff"
+        android:layout_above="@+id/text"
+        android:id="@+id/progress_1"
+        app:rcBackgroundColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"
+        android:textColor="#454545"
+        android:id="@+id/text"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="Loading data..." />
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.5"
+                    android:id="@+id/thumbnail"
+                    android:scaleType="centerCrop"
+
+                    />
+            <TextView
+                android:text="Hello Cards sfdfsdfsdfsdfsdfsdfsdf"
+                android:textSize="25sp"
+                android:id="@+id/qoutes"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                />
+
+            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        >
+                        <com.like.LikeButton
+                            card_view:icon_type="heart"
+                            card_view:icon_size="20dp"
+                            android:id="@+id/like_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            card_view:anim_scale_factor="3"
+                            card_view:liked="false"
+                            card_view:is_enabled="true"
+                            android:layout_gravity="end"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="512"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="0dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="center"
+                        android:id="@+id/favourit"
+                        />
+                    </LinearLayout>
+                  <!--  <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ic_if_jee01_03_2180883"
+                        android:layout_marginLeft="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:tint="@color/colorAccent"
+                        />  -->
+                    <com.like.LikeButton
+                        card_view:icon_size="40dp"
+                        android:id="@+id/share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:anim_scale_factor="5"
+                        card_view:liked="false"
+                        card_view:is_enabled="true"
+                        card_view:like_drawable="@drawable/ic_if_jee01_03_21808832"
+                        card_view:unlike_drawable="@drawable/ic_if_jee01_03_2180883"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        card_view:circle_start_color="#ff0000"
+                        card_view:circle_end_color="#ffb300"
+                        card_view:dots_primary_color="#ff0004"
+                        card_view:dots_secondary_color="#ffb300"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:paddingLeft="40dp"
+                        android:gravity="center"
+                        >
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_if_eye_24_103177"
+                        android:layout_gravity="center"
+                        android:tint="@color/colorAccent"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="512"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="center"
+                        android:id="@+id/seen_count"
+                        android:layout_marginRight="2dp"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="2dp"
+                        />
+                    </LinearLayout>
+                </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

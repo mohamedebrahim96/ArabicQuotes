@@ -1,7 +1,6 @@
-# AntiMosquito
+# ArabicQuotes
 
-This App Broadcast High frequency cycles per second at a frequency that is somewhere between 16,000Hz and 20,000Hz, that can't be 
-heard by the human ear, and that is really bothering for the mosquitos. This is how the application works to get them out of the room.
+This is for the most Valuable Quates Ever say in the History by Actors and Legends and Successful People
 https://play.google.com/store/apps/details?id=com.quotes.app.arabicquotes
 
 ## Getting Started
